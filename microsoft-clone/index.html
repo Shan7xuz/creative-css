@@ -7,33 +7,54 @@
     <link rel="stylesheet" href="/style.css" />
     <title>Microsoft – Cloud, Computers, Apps &amp; Gaming</title>
   </head>
+
   <body>
     <div class="container mx-auto">
       <div class="navbar flex justify-between items-center p-4">
         <div class="flex justify-center items-center md:order-2">
-          <div class="hamburger inline-block p-4 cursor-pointer md:hidden">
+          <div class="hamburger inline-block pr-2 cursor-pointer md:hidden">
             <div class="line h-0.5 w-6 my-1 bg-black"></div>
             <div class="line h-0.5 w-6 my-1 bg-black"></div>
             <div class="line h-0.5 w-6 my-1 bg-black"></div>
           </div>
-          <div class="search md:hidden">searchIcon</div>
+          <div class="search md:hidden">
+            <img
+              class="h-6 w-6 md:h-5 md:w-5"
+              src="image/search.gif"
+              alt="search icon"
+            />
+          </div>
         </div>
         <div class="logo text-center md:order-1 flex">
-          <div class="p-4"><img class="w-[50%]" src="image/logo.png" alt="logo" /></div>
+          <div class="p-4 md:-ml-[5.5rem] flex justify-center">
+            <img class="w-[40%]" src="image/logo.png" alt="logo" />
+          </div>
           <div
-            class="features absolute md:static w-fit md:w-auto inset-0 md:flex md:mx-4 md:space-x-2 -translate-x-96 md:translate-x-0"
+            class="features absolute md:static w-fit md:w-auto inset-0 md:flex md:mx-4 md:space-x-2 -translate-x-96 md:translate-x-0 md:items-center justify-center"
           >
-            <div class="item">Microsoft 365</div>
-            <div class="item">Office</div>
-            <div class="item">Windows</div>
-            <div class="item">Surface</div>
-            <div class="item">Xbox</div>
-            <div class="item">Support</div>
+            <div class="item hover:underline hover:underline-offset-8 cursor-pointer">Microsoft 365</div>
+            <div class="item hover:underline hover:underline-offset-8 cursor-pointer">Office</div>
+            <div class="item hover:underline hover:underline-offset-8 cursor-pointer">Windows</div>
+            <div class="item hover:underline hover:underline-offset-8 cursor-pointer">Surface</div>
+            <div class="item hover:underline hover:underline-offset-8 cursor-pointer">Xbox</div>
+            <div class="item hover:underline hover:underline-offset-8 cursor-pointer">Support</div>
           </div>
         </div>
         <div class="cart text-center md:order-3 flex">
-          <div class="search hidden md:block">All Microsoft searchIcon</div>
-          <div>Cart Account</div>
+          <div class="search hidden md:block">All</div>
+          <img
+            class="h-6 w-6 hidden md:block md:mx-2"
+            src="image/search.gif"
+            alt="search icon"
+          />
+          <div class="flex">
+            <img class="w-6 h-6" src="image/shopping-cart.png" alt="cart" />
+            <img
+              class="w-8 h-7 ml-1 md:ml-2"
+              src="image/account-96.png"
+              alt="account icon"
+            />
+          </div>
         </div>
       </div>
       <div class="slider flex flex-col-reverse md:flex-row bg-[#f2f2f2] mx-2">
@@ -52,25 +73,34 @@
           </button>
         </div>
         <div class="right">
-          <img class="w-48 md:w-[64rem]" src="image/hero2.webp" alt="Hero image" />
+          <img
+            class="hidden md:w-[64rem] md:block"
+            src="image/hero2.webp"
+            alt="Hero image"
+          />
+          <img
+            class="md:hidden"
+            src="image/hero3.webp"
+            alt="Hero image"
+          />
         </div>
       </div>
-      <div class="promo space-y-6 flex flex-col lg:justify-between lg:flex-row">
-        <div class="item flex items-center mx-4 mt-6 space-x-2">
-          <img src="image/windlogo.png" alt="windows logo">
-          <span class="font-medium">Choose your Microsoft 365</span>
+      <div class="promo space-y-6 flex flex-col lg:justify-center lg:flex-row">
+        <div class="item flex items-center mx-4 mt-6 space-x-2 md:flex-col">
+          <img src="image/windlogo.png" alt="windows logo" />
+          <span class="font-medium md:w-28 md:text-center text-sm my-4">Choose your Microsoft 365</span>
         </div>
-        <div class="item flex items-center mx-4 space-x-2">
-          <img src="image/serflogo.webp" alt="windows logo">
-          <span class="font-medium">Explore Surface devices</span>
+        <div class="item flex items-center mx-4 space-x-2 md:flex-col">
+          <img src="image/serflogo.webp" alt="windows logo" />
+          <span class="font-medium md:w-28 md:text-center text-sm my-4">Explore Surface devices</span>
         </div>
-        <div class="item flex items-center mx-4 space-x-2">
-          <img src="image/xbox.webp" alt="windows logo">
-          <span class="font-medium">Buy Xbox Games</span>
+        <div class="item flex items-center mx-4 space-x-2 md:flex-col">
+          <img src="image/xbox.webp" alt="windows logo" />
+          <span class="font-medium md:w-28 md:text-center text-sm my-4">Buy Xbox Games</span>
         </div>
-        <div class="item flex items-center mx-4 space-x-2">
-          <img src="image/windlogo.png" alt="windows logo">
-          <span class="font-medium">Get windows 11</span>
+        <div class="item flex items-center mx-4 space-x-2 md:flex-col">
+          <img src="image/windlogo.png" alt="windows logo" />
+          <span class="font-medium md:w-28 md:text-center text-sm my-4">Get windows 11</span>
         </div>
       </div>
     </div>
